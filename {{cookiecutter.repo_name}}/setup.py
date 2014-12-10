@@ -3,7 +3,7 @@ from setuptools import (
     setup,
 )
 
-import service
+import {{ cookiecutter.package_name }}
 
 requirements = [
 # TODO package requirements
@@ -17,7 +17,7 @@ test_requirements = [
 
 setup(
     name='{{ cookiecutter.repo_name }}',
-    version=service.__version__,
+    version={{ cookiecutter.package_name }}.__version__,
     description='{{ cookiecutter.project_short_description }}',
     packages=find_packages(exclude=[
         "*.tests",
