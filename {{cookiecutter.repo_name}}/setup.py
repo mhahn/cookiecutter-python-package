@@ -9,7 +9,7 @@ requirements = [
 # TODO package requirements
 ]
 
-test_requirements = [
+setup_requirements = [
     'nose>=1.0',
     'coverage>=1.0',
     'mock==1.0.1',
@@ -26,5 +26,5 @@ setup(
         "tests",
     ]),
     install_requires=requirements,
-    tests_require=test_requirements,
+    setup_requires=setup_requirements,
 )
